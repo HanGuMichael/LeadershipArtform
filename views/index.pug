@@ -11,25 +11,23 @@ block content
     div.col
     div.col-md-4.jumbotron
       div.row
-        div.col-md-2
-        h4.loginLabel(style="margin-left:10px") LOG IN OR &nbsp
-        a(class='button btn btn-primary btn-sm' href='coachSignup' role='button' style="margin-left:60px, margin-top:1px").signUp_button Sign Up
+        h4.loginLabel(style="margin-left:15px") LOG IN &nbsp
+        //a(class='button btn btn-primary btn-sm' href='coachSignup' role='button' style="margin-left:60px, margin-top:1px").signUp_button Sign Up
         div.col-md-3
         br
       div.row
-        div.col-md-2
-        div.col-md-8
         div.col
           form(method='POST' action='/coachView' id="loginForm")
             div.form-group
-              input.input-small#username2.form-control(type='text', name='username', placeholder="Email", style="text-align: left" required)
+              input.input-small#username2.form-control(type='text', name='username', placeholder="Email", style="text-align: left ;border: 1px solid #ccc;border-radius: 4px;" required)
             div.form-group
-              input.input-small#password2.form-control(type='password', name='password', placeholder="Password", style="text-align: left" required)
+              input.input-small#password2.form-control(type='password', name='password', placeholder="Password", style="text-align: left ;border: 1px solid #ccc;border-radius: 4px;" required)
             h6(style="color: red; text-align: left") #{message}
             div.row
               div.col-md-5
-              button.btn.btn-primary.btn-sm(type='submit') Sign In
+              button.btn.btn-primary.btn-sm(type='submit' style="position: absolute; left: 15px ;border-radius: 4px;") Sign In
               p#loginPrompt.pull-right.login-prompt
+              a(class='button btn btn-primary btn-sm' href='coachSignup' role='button' style="position: absolute; left: 120px; border-radius: 4px;").signUp_button Sign Up
             br
         br
       h3#IndexHeader AS COACH
@@ -37,25 +35,23 @@ block content
     div.col
     div.col-md-4.jumbotron
       div.row
-        div.col-md-2
-        h4.loginLabel(style="margin-left:10px") LOG IN OR &nbsp
-        a(class='button btn btn-primary btn-sm' href='executiveSignup' style="margin-left:60px, margin-top:1px").signUp_button Sign Up
+        h4.loginLabel(style="margin-left:15px") LOG IN &nbsp
+        //a(class='button btn btn-primary btn-sm' href='executiveSignup' style="margin-left:60px, margin-top:1px").signUp_button Sign Up
         div.col-md-3
         br
       div.row
-        div.col-md-2
-        div.col-md-8
         div.col
           form(method='POST' action='/executiveView' id="loginForm")
             div.form-group
-              input.input-small#username2.form-control(type='text', name='username2', placeholder="Email", style="text-align: left" required)
+              input.input-small#username2.form-control(type='text', name='username2', placeholder="Email", style="text-align: left ;border: 1px solid #ccc;border-radius: 4px;" required)
             div.form-group
-              input.input-small#password2.form-control(type='password', name='password2', placeholder="Password", style="text-align: left" required)
+              input.input-small#password2.form-control(type='password', name='password2', placeholder="Password", style="text-align: left ;border: 1px solid #ccc;border-radius: 4px;" required)
             h6(style="color: red; text-align: left") #{message2}
             div.row
               div.col-md-5
-              button.btn.btn-primary.btn-sm(type='submit') Sign In
+              button.btn.btn-primary.btn-sm(type='submit' style="position: absolute; left: 15px; border-radius: 4px;") Sign In
               p#loginPrompt.pull-right.login-prompt
+              a(class='button btn btn-primary btn-sm' href='executiveSignup' style="position: absolute; left: 120px; border-radius: 4px;").signUp_button Sign Up
             br
       h3#IndexHeader AS EXECUTIVE
     div.col

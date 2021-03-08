@@ -26,7 +26,7 @@ block content
 		h1 Welcome, #{user.first_name}
 		.col-md-4
 		form(method='GET' action='/coachView')
-			button.btn.btn-outline-primary(type="button",data-toggle="modal", data-target="#addClientModal" style="float:center").client_button Add Client
+			button.btn.btn-outline-primary(type="button",data-toggle="modal", data-target="#addClientModal" style="padding:5px;border-radius: 4px;float:center").client_button Add Client
 		.modal(role="dialog", id="addClientModal")
 			.modal-dialog-centered.custom_modal_dialog(role="document")
 				.modal-content

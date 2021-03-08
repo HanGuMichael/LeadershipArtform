@@ -25,12 +25,13 @@ block content
 		div.col-md-5
 			br
 			h1 #{user.full_name}
-			h5 #{user.user_email}
+			h5 Coach ID: #{user.coach_id}
+			h5 EMAIL: #{user.user_email}
 			p #{user.biography}
 			form(method='GET' action='/coachProfile_coach')
 				input(type="hidden" name="remindAll" value="remindAll")
-				button(class="btn btn-outline-primary",type="submit") Remind All
-				button(class="btn btn-outline-primary",type="button",data-toggle="modal", data-target="#addClientModal").client_button Add Client
+				button(class="btn btn-outline-primary",type="submit", style="padding:5px;border-radius: 4px;") Remind All
+				button(class="btn btn-outline-primary",type="button",data-toggle="modal", data-target="#addClientModal", style="padding:5px;border-radius: 4px;").client_button Add Client
 			.modal(role="dialog", id="addClientModal")
 				.modal-dialog-centered.custom_modal_dialog(role="document")
 					.modal-content
